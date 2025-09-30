@@ -9,6 +9,7 @@ export default function Team() {
       alt: "Image number 1",
       title: "Image 1",
       text: "Description for image 1",
+      isNice: true,
     },
     {
       src: "https://picsum.photos/201",
@@ -21,6 +22,7 @@ export default function Team() {
       alt: "Image number 3",
       title: "Image 3",
       text: "Description for image 3",
+      isNice: true,
     },
     {
       src: "https://picsum.photos/203",
@@ -41,6 +43,7 @@ export default function Team() {
             alt={card.alt}
             title={card.title}
             text={card.text}
+            isNice={card.isNice}
           />
         ))}
       </div>
