@@ -6,7 +6,7 @@ import Counter from "./components/Counter";
 export default function Home() {
   return (
     <StrictMode>
-      <TopBar title={"El Titolo"}></TopBar>
+      <TopBar title={"Homepage"}/>
       <Counter/>
     </StrictMode>
   );
