@@ -1,0 +1,43 @@
+.use-reducer-cmp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100vw;
+    min-height: 80px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.use-reducer-cmp form{
+    background: rgb(171, 195, 231);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+
+.use-reducer-cmp input {
+    font-size: 1rem;
+    margin: 1px solid black;
+    min-width: 200px;
+    text-align: center;
+}
+
+.use-reducer-cmp label {
+    font-size: 1rem;
+    min-width: 100px;
+    text-align: center;
+}
+
+.use-reducer-cmp button {
+    padding: 8px 16px;
+    margin: 8px;
+    border: none;
+    background: #332a33;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
