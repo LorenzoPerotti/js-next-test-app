@@ -31,6 +31,7 @@ export default function Team() {
     },
   ]);
 
+  // this is passed to the CardForm component as a prop and is called when a new card is added
   const addCard = (newCard) => {
     setCards((prevCards) => [...prevCards, newCard]);
   };
