@@ -1,0 +1,35 @@
+
+
+.fibonacci {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100vw;
+    min-height: 80px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.fibonacci button {
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border: none;
+    background: #c4820a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fibonacci button:hover {
+    background: #a66e08;
+}
+
+.fibonacci span {
+    font-size: 2rem;
+    font-weight: bold;
+    min-width: 40px;
+    text-align: center;
+}
