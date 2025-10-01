@@ -1,9 +1,12 @@
 // app/team/page.tsx (Server Component, no "use client")
+"use client";
 import TopBar from "../components/Topbar";
 import CardList from "../components/CardList";
+import CardForm from "../components/CardForm";
+import { useState } from "react";
 
 export default function Team() {
-  const cards = [
+  const [cards, setCards] = useState([
     {
       src: "https://picsum.photos/200",
       title: "Image 1",
@@ -26,11 +29,16 @@ export default function Team() {
       title: "Image 4",
       text: "Description 4",
     },
-  ];
+  ]);
+
+  const addCard = (newCard) => {
+    setCards((prevCards) => [...prevCards, newCard]);
+  };
 
   return (
     <>
       <TopBar title="Team" />
+      <CardForm onAddCard={addCard} />
       <CardList cards={cards} />
     </>
   );

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Card from "./Card";
 import "./CardList.css";
+import "./Toggle.css";
 
 export default function CardList({ cards }) {
   const [showNiceOnly, setShowNiceOnly] = useState(false);

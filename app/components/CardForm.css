@@ -1,0 +1,104 @@
+.card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  gap: 8px;
+  margin: 20px;
+}
+
+.card-form form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 12px;
+  background: #333;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid white;
+  font-size: 1rem;
+  color: white;
+  background: #222;
+}
+
+.input-wrapper textarea {
+  resize: vertical;
+}
+
+/* Icon buttons (clear × and 📷 autofill) */
+.icon-btn {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.icon-btn:hover {
+  color: #fff;
+}
+
+/* Clear button sits inside the input */
+.clear-btn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Autofill button sits to the right, outside input */
+.autofill-btn {
+  position: relative;
+  margin-left: 18px;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.autofill-btn:hover {
+  background: #666;
+}
+
+/* Submit button */
+.card-form button[type="submit"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  background: #fc0;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.card-form button[type="submit"]:hover {
+  background: orange;
+}
+
+/* Disabled state */
+.card-form button[type="submit"]:disabled {
+  background: #777;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.card-form button[type="submit"]:disabled:hover {
+  background: #777;
+}
