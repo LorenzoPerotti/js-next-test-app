@@ -38,7 +38,7 @@ export default function Team() {
 
   return (
     <>
-      <TopBar title="Team" />
+      <TopBar title="Cards" />
       <CardForm onAddCard={addCard} />
       <CardList cards={cards} />
     </>

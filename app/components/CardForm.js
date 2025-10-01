@@ -12,6 +12,7 @@ function getRandomPicsumUrl() {
   return `https://picsum.photos/${randomSize}`;
 }
 
+// trim removes the spaces in string, return true if all fields are non-empty
 function isValidCard({ title, src, text }) {
   return title.trim() && src.trim() && text.trim();
 }
@@ -25,7 +26,7 @@ export default function CardForm({ onAddCard }) {
   });
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // prevent page reload
     onAddCard(card);
     setCard({ title: "", src: "", text: "", isNice: false });
   };
@@ -45,8 +46,8 @@ export default function CardForm({ onAddCard }) {
             type="text"
             placeholder="Title"
             value={card.title}
-            onChange={(e) =>
-              setCard((prev) => ({ ...prev, title: e.target.value }))
+            onChange={
+              (e) => setCard((prev) => ({ ...prev, title: e.target.value })) // update title on value change
             }
           />
           {card.title && (

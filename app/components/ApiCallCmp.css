@@ -1,0 +1,30 @@
+.api-call-cmp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100vw;
+    min-height: 80px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 20px;
+}
+
+.api-call-cmp button {
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border: none;
+    background: #b812af;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 52px;
+    width: 180px;
+}
+
+.api-call-cmp button:hover {
+    background: #860e80;
+}
+
+

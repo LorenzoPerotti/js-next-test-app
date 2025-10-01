@@ -10,7 +10,7 @@ function TopBar({ title }) {
   const links = [
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
-    { href: "/team", label: "Team" },
+    { href: "/cards", label: "Cards" },
   ];
 
   return (
